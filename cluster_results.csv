@@ -1,0 +1,6 @@
+Cluster,Name,N_Test,Accuracy,F1,ROC_AUC,Brier
+0,Comfortable Lead,7523,0.53,0.5806,0.5243,0.2542
+1,Close / Late Game,31522,0.531,0.594,0.524,0.2527
+2,Big Deficit,6043,0.5342,0.3735,0.5501,0.256
+3,Early Neutral,7993,0.6177,0.7438,0.5245,0.2352
+4,Red Zone Drive,10919,0.5283,0.5969,0.5247,0.2519
