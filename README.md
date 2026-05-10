@@ -3,3 +3,11 @@ This project builds a two-stage hybrid machine learning pipeline for NFL in-game
 The pipeline first uses K-Means clustering to segment plays into five interpretable game states (Comfortable Lead, Close/Late Game, Big Deficit, Early Neutral, Red Zone Drive). It then trains a dedicated Random Forest (RF) classifier within each cluster. To ensure a fair evaluation, the hybrid pipeline is evaluated against a global Random Forest baseline (using identical hyperparameters) and the Pythagorean Win Expectancy heuristic across Accuracy, F1, ROC-AUC, and Brier Score.
 
 Built with scikit-learn, pandas, matplotlib, and seaborn. Data is sourced dynamically via the nfl_data_py package. Results are exported to a serverless SQLite database for portability.
+
+How to Run the Pipeline:
+
+1. Install required packages: pip install nfl_data_py pandas scikit-learn matplotlib seaborn shap
+  
+2. Run the main script: python nfl_win_probability.py
+
+3. Note: Running the script will automatically generate all 10 evaluation figures and build an SQLite database (nfl_predictions.db) locally in your directory containing the final model and cluster metrics.
