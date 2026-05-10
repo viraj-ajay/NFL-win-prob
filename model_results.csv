@@ -1,5 +1,0 @@
-Model,Accuracy,F1,ROC-AUC,Brier
-Logistic Regression (baseline),0.5538,0.6221,0.5577,0.2462
-Pythagorean Win Exp. (heuristic),0.5459,0.5886,0.5575,0.2958
-Global GBT (no clustering),0.5447,0.6122,0.553,0.2484
-Hybrid GBT (ours),0.5415,0.6037,0.5435,0.2508
